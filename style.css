@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  max-width: 32em;
+  flex-wrap: wrap;
+  
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
