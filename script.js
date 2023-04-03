@@ -30,16 +30,42 @@ pen.forEach (box =>
   
   box.addEventListener ( "mouseenter", (e) => {
     e.target.style.backgroundColor = penColor;
-  },
-  false
-  ));
-  
-  
+  }, false)
+);
+ 
+//  Draw Button
+
+const drawButton = document.querySelector('.draw-button');
+function useDrawButton() {
+  penColor = "black";
+}
+
+drawButton.addEventListener("click", useDrawButton);
+
+
+// clear screen button
+
+const clearButton = document.querySelector('.clear-button');
 function clearScreen() {
 
   pen.forEach (box => box.style.backgroundColor = "white");
 }
 
-
-const clearButton = document.querySelector('.clear-button');
 clearButton.addEventListener("click", clearScreen)
+
+// erase button
+
+const eraseButton = document.querySelector('.erase-button');
+function useEraseButton() {
+  penColor = "white";
+}
+
+eraseButton.addEventListener("click", useEraseButton);
+
+// rainbow button
+
+const rainbowButton = document.querySelector('.rainbow-button');
+
+function useRainbowButton() {
+
+}
